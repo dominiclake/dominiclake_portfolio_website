@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
+    background-color: blanchedalmond;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    transition-duration: 250ms;
+    color: darkred;
+    background-color: blanchedalmond;
+}
+
+img{
+    align-content: center;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.quote{
+    margin: auto;
+    text-align: center;
+}
+
+.About, .Progress{
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px;
+    border-color: black;
+}
+
+.About h1, .Progress h1{
+    margin-bottom: 10px;
+}
+
+progress{
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 5px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    transition-duration: 250ms;
+    color:darkred;
+}
+
+hr{
+    visibility: hidden;
+}
