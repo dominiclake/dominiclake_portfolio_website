@@ -37,8 +37,9 @@ nav a:hover{
 
 img{
     align-content: center;
-    margin: 20px;
+    margin: 20px 35%;
     border-radius: 10%;
+    width: 30%;
 }
 
 .quote{
