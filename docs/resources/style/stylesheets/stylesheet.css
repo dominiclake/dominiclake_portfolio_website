@@ -23,14 +23,14 @@ header nav{
 }
 
 header img{
-    padding:20px;
+    padding:5px 15px;
     margin:0;
-    width:5%;
+    width:3%;
     border-radius: 35%;
 }
 
 header a, .fav_book a, .fav_song a, .contact_btn a{
-    padding: 8px 12px;
+    padding: 6px 12px;
     background-color: #b85042;
     color: black;
     border-radius: 10px;
@@ -150,7 +150,7 @@ h3, h1, h2{
 }
 
 .intro{
-    margin: 32% 0;
+    margin: 15% 15%;
 }
 
 .intro h1{
@@ -158,9 +158,8 @@ h3, h1, h2{
 }
 
 .intro h3{
-    text-align: left;
-    margin-left:23.5%;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 15%;
 }
 
 .contact_btn{
@@ -174,8 +173,11 @@ h3, h1, h2{
 }
 
 .contact_btn a:hover{
-    animation: contact_anim 2s ease 0s 1 normal forwards;
     background-color: #b85042;
+}
+
+.contact_btn:hover{
+    animation: contact_anim 1s ease 0s 1 forwards;
 }
 
 @keyframes contact_anim {
@@ -186,22 +188,22 @@ h3, h1, h2{
 	}
 
 	15% {
-		transform: translateX(-30px) rotate(-6deg);
+		transform: translateX(-16px) rotate(-6deg);
 	}
 
 	30% {
-		transform: translateX(15px) rotate(6deg);
+		transform: translateX(8px) rotate(6deg);
 	}
 
 	45% {
-		transform: translateX(-15px) rotate(-3.6deg);
+		transform: translateX(-8px) rotate(-3.6deg);
 	}
 
 	60% {
-		transform: translateX(9px) rotate(2.4deg);
+		transform: translateX(4.5px) rotate(2.4deg);
 	}
 
 	75% {
-		transform: translateX(-6px) rotate(-1.2deg);
+		transform: translateX(-3px) rotate(-1.2deg);
 	}
 }
