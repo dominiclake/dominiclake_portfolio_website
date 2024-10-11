@@ -6,26 +6,31 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
-    background-color: #a7beae;
+    background-image: url(../../img/assets/bg.svg);
+    background-size: contain;
 }
 
 header{
+    display: flex;
     background-color: white;
+    align-items: center;
     color: black;
-    text-align: center;
-}
-
-header h1{
-    padding: 25px;
+    justify-content: space-between;
 }
 
 header nav{
-    background-color: #e7e8d1;
     padding: 10px;
 }
 
-header a{
-    padding: 5px 10px;
+header img{
+    padding:20px;
+    margin:0;
+    width:5%;
+    border-radius: 35%;
+}
+
+header a, .fav_book a, .fav_song a, .contact_btn a{
+    padding: 8px 12px;
     background-color: #b85042;
     color: black;
     border-radius: 10px;
@@ -34,7 +39,7 @@ header a{
     margin: 0 15px;
 }
 
-nav a:hover{
+nav a:hover, .fav_book a:hover, .fav_song a:hover, .contact_btn a:hover{
     transition-duration: 250ms;
     background-color: #a7beae;
 }
@@ -46,14 +51,20 @@ img{
     width: 30%;
 }
 
+img:hover{
+    transition-duration: 20s;
+    width: 90%;
+    margin: 20px 5%;
+}
+
 .quote{
     margin: auto;
     text-align: center;
 }
 
-.About, .Progress{
+.About, .Progress, .contact_info, .objective, .education, .experience, .extracurricular, .fav_book, .fav_song, .fav_movie{
     background: white;
-    margin: 20px 0;
+    margin: 30px 50px;
     padding: 20px;
     border-radius: 10px;
     border: 3px;
@@ -75,7 +86,7 @@ footer{
     margin-top: 20px;
     padding: 20px;
     background-color: black;
-    color: blanchedalmond;
+    color: white;
 }
 
 footer ul{
@@ -86,15 +97,111 @@ footer ul li{
     margin: 5px;
 }
 
-footer a{
+footer a, .contact_info a{
     text-decoration: none;
+    color: #b85042;
 }
 
-footer a:hover{
+footer a:hover, .contact_info a:hover{
     transition-duration: 250ms;
-    color:darkred;
+    color:#e7e8d1;
 }
 
 hr{
     visibility: hidden;
+}
+
+.experience ul li, .extracurricular ul li{
+    margin: 0px 20px;
+}
+
+.fav_book img{
+    width: 20%;
+    margin: 20px 40%;
+}
+
+.fav_song h3{
+    margin-bottom: 10px;
+}
+
+.fav_song audio{
+    margin: 20px 10px;
+}
+
+h3, h1, h2{
+    text-align: center;
+}
+
+.education table{
+    padding: 15px;
+    text-align: center;
+}
+
+.education th, .education td{
+    padding: 10px;
+}
+
+.experience h3{
+    text-align: left;
+}
+
+.education th, td{
+    text-align: left;
+}
+
+.intro{
+    margin: 32% 0;
+}
+
+.intro h1{
+    font-size: 500%;
+}
+
+.intro h3{
+    text-align: left;
+    margin-left:23.5%;
+    margin-bottom: 10px;
+}
+
+.contact_btn{
+    text-align: center;
+}
+
+.contact_btn a{
+    padding: 15px 50px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.contact_btn a:hover{
+    animation: contact_anim 2s ease 0s 1 normal forwards;
+    background-color: #b85042;
+}
+
+@keyframes contact_anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
 }
