@@ -150,7 +150,7 @@ h3, h1, h2{
 }
 
 .intro{
-    margin: 15% 15%;
+    margin: 15% 10%;
 }
 
 .intro h1{
@@ -167,6 +167,7 @@ h3, h1, h2{
 }
 
 .contact_btn a{
+    margin:15px 50px;
     padding: 15px 50px;
     font-size: 120%;
     font-weight: bold;
