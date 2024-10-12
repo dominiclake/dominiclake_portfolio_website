@@ -211,6 +211,7 @@ h3, h1, h2{
 }
 
 iframe{
-    width: 60%;
-    margin: 0 20%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
