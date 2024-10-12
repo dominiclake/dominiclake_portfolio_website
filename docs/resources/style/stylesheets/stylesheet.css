@@ -39,7 +39,7 @@ header a, .fav_book a, .fav_song a, .contact_btn a{
     margin: 0 15px;
 }
 
-nav a:hover, .fav_book a:hover, .fav_song a:hover, .contact_btn a:hover{
+header a:hover, .fav_book a:hover, .fav_song a:hover, .contact_btn a:hover{
     transition-duration: 250ms;
     background-color: #a7beae;
 }
@@ -207,4 +207,9 @@ h3, h1, h2{
 	75% {
 		transform: translateX(-3px) rotate(-1.2deg);
 	}
+}
+
+iframe{
+    width: 60%;
+    margin: 0 20%;
 }
